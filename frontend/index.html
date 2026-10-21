@@ -1,0 +1,1685 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Academic & Career Decision Intelligence System</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+    <!-- =====================================================
+         LOGIN PAGE
+    ====================================================== -->
+
+    <div class="login-page" id="loginPage">
+
+        <div class="login-left">
+
+            <div class="brand">
+                <span>Smart Academic</span>
+                <br>
+                Career Intelligence
+            </div>
+
+
+            <div class="hero-text">
+
+                <p class="eyebrow">
+                    ACADEMIC & CAREER INTELLIGENCE
+                </p>
+
+                <h1>
+                    Make smarter
+                    <span>academic decisions.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Track your academic performance, manage assignments
+                    and discover career paths based on your skills.
+                </p>
+
+            </div>
+
+
+            <div class="login-features">
+
+                <div>
+                    <strong>01</strong>
+                    <span>Academic Tracking</span>
+                </div>
+
+                <div>
+                    <strong>02</strong>
+                    <span>Career Intelligence</span>
+                </div>
+
+                <div>
+                    <strong>03</strong>
+                    <span>Smart Performance Analysis</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             LOGIN / REGISTER RIGHT SIDE
+        ================================================== -->
+
+        <div class="login-right">
+
+
+            <!-- ================= LOGIN CARD ================= -->
+
+            <div class="login-card" id="loginCard">
+
+                <div class="login-heading">
+
+                    <p>
+                        WELCOME BACK
+                    </p>
+
+                    <h2>
+                        Sign in
+                    </h2>
+
+                    <span>
+                        Access your academic dashboard
+                    </span>
+
+                </div>
+
+
+                <form id="loginForm">
+
+                    <div class="input-group">
+
+                        <label for="username">
+                            Username
+                        </label>
+
+                        <input
+                            type="text"
+                            id="username"
+                            placeholder="Enter your username"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="password">
+                            Password
+                        </label>
+
+                        <input
+                            type="password"
+                            id="password"
+                            placeholder="Enter your password"
+                            required
+                        >
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="login-btn"
+                    >
+
+                        Sign In
+
+                        <span>→</span>
+
+                    </button>
+
+
+                    <p
+                        id="loginMessage"
+                        class="login-message"
+                    ></p>
+
+                </form>
+
+
+                <!-- CREATE ACCOUNT LINK -->
+
+                <div class="create-account-link">
+
+                    <span>
+                        Don't have an account?
+                    </span>
+
+                    <button
+                        type="button"
+                        id="showRegisterBtn"
+                    >
+                        Create Account
+                    </button>
+
+                </div>
+
+
+                <div class="login-footer">
+
+                    <span>
+                        Smart academic decisions start here.
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= REGISTER CARD ================= -->
+
+            <div
+                class="login-card register-card"
+                id="registerCard"
+            >
+
+
+                <div class="login-heading">
+
+                    <p>
+                        STUDENT REGISTRATION
+                    </p>
+
+                    <h2>
+                        Create your account
+                    </h2>
+
+                    <span>
+                        Set up your academic profile to get started.
+                    </span>
+
+                </div>
+
+
+                <form id="registerForm">
+
+
+                    <div class="register-grid">
+
+
+                        <!-- FULL NAME -->
+
+                        <div class="input-group">
+
+                            <label for="registerName">
+                                Full Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="registerName"
+                                placeholder="Enter your full name"
+                                required
+                            >
+
+                        </div>
+
+
+
+                        <!-- AGE -->
+
+                        <div class="input-group">
+
+                            <label for="registerAge">
+                                Age
+                            </label>
+
+                            <input
+                                type="number"
+                                id="registerAge"
+                                placeholder="Enter your age"
+                                min="1"
+                                max="100"
+                                required
+                            >
+
+                        </div>
+
+
+
+                        <!-- DEPARTMENT -->
+
+                        <div class="input-group full-width">
+
+                            <label for="registerDepartment">
+                                Department
+                            </label>
+
+                            <input
+                                type="text"
+                                id="registerDepartment"
+                                placeholder="e.g. Computer Science"
+                                required
+                            >
+
+                        </div>
+
+
+
+                        <!-- USERNAME -->
+
+                        <div class="input-group">
+
+                            <label for="registerUsername">
+                                Username
+                            </label>
+
+                            <input
+                                type="text"
+                                id="registerUsername"
+                                placeholder="Create username"
+                                required
+                            >
+
+                        </div>
+
+
+
+                        <!-- PASSWORD -->
+
+                        <div class="input-group">
+
+                            <label for="registerPassword">
+                                Password
+                            </label>
+
+                            <input
+                                type="password"
+                                id="registerPassword"
+                                placeholder="Create password"
+                                required
+                            >
+
+                        </div>
+
+
+
+                        <!-- GPA -->
+
+                        <div class="input-group">
+
+                            <label for="registerGpa">
+                                GPA
+                            </label>
+
+                            <input
+                                type="number"
+                                id="registerGpa"
+                                placeholder="0.0 – 4.0"
+                                min="0"
+                                max="4"
+                                step="0.01"
+                                required
+                            >
+
+                        </div>
+
+
+
+                        <!-- ATTENDANCE -->
+
+                        <div class="input-group">
+
+                            <label for="registerAttendance">
+                                Attendance
+                            </label>
+
+                            <input
+                                type="number"
+                                id="registerAttendance"
+                                placeholder="0 – 100%"
+                                min="0"
+                                max="100"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+
+                    <button
+                        type="submit"
+                        class="login-btn"
+                    >
+
+                        Create Account
+
+                        <span>→</span>
+
+                    </button>
+
+
+                    <p
+                        id="registerMessage"
+                        class="register-message"
+                    ></p>
+
+                </form>
+
+
+
+                <!-- BACK TO LOGIN -->
+
+                <div class="create-account-link">
+
+                    <span>
+                        Already have an account?
+                    </span>
+
+                    <button
+                        type="button"
+                        id="showLoginBtn"
+                    >
+                        Login
+                    </button>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- =================================================
+             PROJECT CREDIT
+        ================================================== -->
+
+        <div class="project-footer">
+
+            Smart Academic &amp; Career Decision Intelligence System
+            · Semester Project
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         DASHBOARD
+    ====================================================== -->
+
+    <div
+        class="dashboard"
+        id="dashboardPage"
+    >
+
+
+        <!-- ================= SIDEBAR ================= -->
+
+        <aside class="sidebar">
+
+
+            <div class="sidebar-brand">
+
+                <span>Smart</span> Academic
+
+            </div>
+
+
+
+            <div class="student-mini">
+
+                <div class="avatar">
+                    S
+                </div>
+
+                <div>
+
+                    <strong id="studentName">
+                        Student
+                    </strong>
+
+                    <span>
+                        Computer Science
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <nav class="sidebar-nav">
+
+
+                <p class="nav-title">
+                    MAIN MENU
+                </p>
+
+
+                <button
+                    class="nav-item active"
+                    data-section="overview"
+                >
+
+                    <span>⌂</span>
+                    Overview
+
+                </button>
+
+
+
+                <button
+                    class="nav-item"
+                    data-section="academic"
+                >
+
+                    <span>▣</span>
+                    Academic
+
+                </button>
+
+
+
+                <button
+                    class="nav-item"
+                    data-section="assignments"
+                >
+
+                    <span>✓</span>
+                    Assignments
+
+                </button>
+
+
+
+                <button
+                    class="nav-item"
+                    data-section="career"
+                >
+
+                    <span>◈</span>
+                    Career Intelligence
+
+                </button>
+
+
+
+                <p class="nav-title">
+                    ACCOUNT
+                </p>
+
+
+
+                <button
+                    class="nav-item"
+                    data-section="profile"
+                >
+
+                    <span>○</span>
+                    Profile
+
+                </button>
+
+            </nav>
+
+
+
+            <button
+                class="logout-btn"
+                id="logoutBtn"
+            >
+
+                <span>↪</span>
+                Logout
+
+            </button>
+
+        </aside>
+
+
+
+        <!-- =================================================
+             MAIN CONTENT
+        ================================================== -->
+
+        <main class="main-content">
+
+
+            <!-- HEADER -->
+
+            <header class="dashboard-header">
+
+                <div>
+
+                    <p class="header-label">
+                        STUDENT DASHBOARD
+                    </p>
+
+                    <h1 id="pageTitle">
+                        Good morning, Student.
+                    </h1>
+
+                    <p>
+                        Here's an overview of your academic journey.
+                    </p>
+
+                </div>
+
+
+                <div class="header-date">
+
+                    <span>
+                        MONDAY
+                    </span>
+
+                    <strong>
+                        22 SEP 2026
+                    </strong>
+
+                </div>
+
+            </header>
+
+
+
+            <!-- =================================================
+                 OVERVIEW
+            ================================================== -->
+
+            <section
+                class="dashboard-section active-section"
+                id="overview"
+            >
+
+
+                <div class="stats-grid">
+
+
+                    <div class="stat-card">
+
+                        <div class="stat-top">
+
+                            <span>
+                                GPA
+                            </span>
+
+                            <div class="stat-icon">
+                                GPA
+                            </div>
+
+                        </div>
+
+                        <strong class="stat-value">
+                            3.62
+                        </strong>
+
+                        <p class="stat-note positive">
+                            ↑ Strong academic standing
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="stat-card">
+
+                        <div class="stat-top">
+
+                            <span>
+                                ATTENDANCE
+                            </span>
+
+                            <div class="stat-icon">
+                                %
+                            </div>
+
+                        </div>
+
+                        <strong class="stat-value">
+                            87%
+                        </strong>
+
+                        <p class="stat-note positive">
+                            ↑ Above target
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="stat-card">
+
+                        <div class="stat-top">
+
+                            <span>
+                                PENDING
+                            </span>
+
+                            <div class="stat-icon">
+                                !
+                            </div>
+
+                        </div>
+
+                        <strong class="stat-value">
+                            3
+                        </strong>
+
+                        <p class="stat-note warning">
+                            Assignments remaining
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="stat-card">
+
+                        <div class="stat-top">
+
+                            <span>
+                                CAREER MATCH
+                            </span>
+
+                            <div class="stat-icon">
+                                %
+                            </div>
+
+                        </div>
+
+                        <strong class="stat-value">
+                            92%
+                        </strong>
+
+                        <p class="stat-note positive">
+                            Frontend Developer
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="dashboard-grid">
+
+
+                    <!-- PERFORMANCE -->
+
+                    <div class="panel performance-panel">
+
+                        <div class="panel-header">
+
+                            <div>
+
+                                <p>
+                                    ACADEMIC PERFORMANCE
+                                </p>
+
+                                <h2>
+                                    Performance overview
+                                </h2>
+
+                            </div>
+
+                            <span class="status-badge">
+                                ON TRACK
+                            </span>
+
+                        </div>
+
+
+
+                        <div class="performance-content">
+
+
+                            <div class="performance-score">
+
+                                <div class="score-circle">
+
+                                    <strong>
+                                        86
+                                    </strong>
+
+                                    <span>
+                                        / 100
+                                    </span>
+
+                                </div>
+
+                                <p>
+                                    Overall Performance
+                                </p>
+
+                            </div>
+
+
+
+                            <div class="performance-bars">
+
+
+                                <div class="bar-item">
+
+                                    <div>
+
+                                        <span>
+                                            GPA
+                                        </span>
+
+                                        <strong>
+                                            90%
+                                        </strong>
+
+                                    </div>
+
+                                    <div class="bar">
+
+                                        <span
+                                            style="width: 90%"
+                                        ></span>
+
+                                    </div>
+
+                                </div>
+
+
+
+                                <div class="bar-item">
+
+                                    <div>
+
+                                        <span>
+                                            Attendance
+                                        </span>
+
+                                        <strong>
+                                            87%
+                                        </strong>
+
+                                    </div>
+
+                                    <div class="bar">
+
+                                        <span
+                                            style="width: 87%"
+                                        ></span>
+
+                                    </div>
+
+                                </div>
+
+
+
+                                <div class="bar-item">
+
+                                    <div>
+
+                                        <span>
+                                            Assignments
+                                        </span>
+
+                                        <strong>
+                                            78%
+                                        </strong>
+
+                                    </div>
+
+                                    <div class="bar">
+
+                                        <span
+                                            style="width: 78%"
+                                        ></span>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- SMART ALERTS -->
+
+                    <div class="panel alerts-panel">
+
+                        <div class="panel-header">
+
+                            <div>
+
+                                <p>
+                                    INTELLIGENT SYSTEM
+                                </p>
+
+                                <h2>
+                                    Smart alerts
+                                </h2>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="alert-list">
+
+
+                            <div class="alert-item">
+
+                                <div class="alert-icon warning-icon">
+                                    !
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        Assignment deadline
+                                    </strong>
+
+                                    <p>
+                                        DSA Assignment is still pending.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="alert-item">
+
+                                <div class="alert-icon positive-icon">
+                                    ✓
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        Attendance looks good
+                                    </strong>
+
+                                    <p>
+                                        Your attendance is above 85%.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="alert-item">
+
+                                <div class="alert-icon info-icon">
+                                    i
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        Career assessment
+                                    </strong>
+
+                                    <p>
+                                        Your current skill profile is ready.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- RECENT ASSIGNMENTS -->
+
+                <div class="panel assignments-preview">
+
+                    <div class="panel-header">
+
+                        <div>
+
+                            <p>
+                                ASSIGNMENTS
+                            </p>
+
+                            <h2>
+                                Recent assignments
+                            </h2>
+
+                        </div>
+
+                        <button class="text-btn">
+                            View all →
+                        </button>
+
+                    </div>
+
+
+
+                    <div class="assignment-table">
+
+
+                        <div class="table-row table-heading">
+
+                            <span>
+                                Assignment
+                            </span>
+
+                            <span>
+                                Course
+                            </span>
+
+                            <span>
+                                Status
+                            </span>
+
+                        </div>
+
+
+
+                        <div class="table-row">
+
+                            <span>
+                                DSA Assignment
+                            </span>
+
+                            <span>
+                                Data Structures
+                            </span>
+
+                            <span class="pending">
+                                Pending
+                            </span>
+
+                        </div>
+
+
+
+                        <div class="table-row">
+
+                            <span>
+                                Database Project
+                            </span>
+
+                            <span>
+                                Database
+                            </span>
+
+                            <span class="completed">
+                                Completed
+                            </span>
+
+                        </div>
+
+
+
+                        <div class="table-row">
+
+                            <span>
+                                AI Task
+                            </span>
+
+                            <span>
+                                Artificial Intelligence
+                            </span>
+
+                            <span class="pending">
+                                Pending
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 ACADEMIC
+            ================================================== -->
+
+            <section
+                class="dashboard-section"
+                id="academic"
+            >
+
+
+                <div class="section-heading">
+
+                    <p>
+                        ACADEMIC MANAGEMENT
+                    </p>
+
+                    <h2>
+                        Track your academic progress
+                    </h2>
+
+                </div>
+
+
+
+                <div class="academic-grid">
+
+
+                    <div class="tool-card">
+
+                        <span class="tool-number">
+                            01
+                        </span>
+
+                        <h3>
+                            GPA Calculator
+                        </h3>
+
+                        <p>
+                            Calculate your GPA from your percentage
+                            and monitor your academic performance.
+                        </p>
+
+
+                        <div class="tool-input">
+
+                            <input
+                                type="number"
+                                id="percentageInput"
+                                placeholder="Enter percentage"
+                                min="0"
+                                max="100"
+                            >
+
+                            <button id="calculateGpaBtn">
+                                Calculate
+                            </button>
+
+                        </div>
+
+
+                        <div
+                            id="gpaResult"
+                            class="result-box"
+                        >
+                            Your calculated GPA will appear here.
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="tool-card">
+
+                        <span class="tool-number">
+                            02
+                        </span>
+
+                        <h3>
+                            Exam Countdown
+                        </h3>
+
+                        <p>
+                            Keep track of how many days remain
+                            before your upcoming examination.
+                        </p>
+
+
+                        <div class="countdown-input">
+
+                            <input
+                                type="number"
+                                id="daysInput"
+                                placeholder="Days remaining"
+                                min="0"
+                            >
+
+                            <button id="countdownBtn">
+                                Set
+                            </button>
+
+                        </div>
+
+
+                        <div
+                            id="countdownResult"
+                            class="result-box"
+                        >
+                            Enter your remaining days.
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="tool-card">
+
+                        <span class="tool-number">
+                            03
+                        </span>
+
+                        <h3>
+                            Performance Level
+                        </h3>
+
+                        <p>
+                            Your current academic performance
+                            based on GPA and attendance.
+                        </p>
+
+
+                        <div class="performance-level">
+
+                            <strong>
+                                Excellent
+                            </strong>
+
+                            <span>
+                                GPA 3.5+ · Attendance 85%+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 ASSIGNMENTS
+            ================================================== -->
+
+            <section
+                class="dashboard-section"
+                id="assignments"
+            >
+
+
+                <div class="section-heading">
+
+                    <p>
+                        ASSIGNMENT MANAGEMENT
+                    </p>
+
+                    <h2>
+                        Stay ahead of your work
+                    </h2>
+
+                </div>
+
+
+
+                <div class="panel assignment-manager">
+
+
+                    <div class="assignment-add">
+
+                        <input
+                            type="text"
+                            id="assignmentInput"
+                            placeholder="Enter assignment name"
+                        >
+
+                        <button id="addAssignmentBtn">
+                            + Add Assignment
+                        </button>
+
+                    </div>
+
+
+
+                    <div id="assignmentList">
+
+
+                        <div class="assignment-manager-row">
+
+                            <span>
+                                DSA Assignment
+                            </span>
+
+                            <button
+                                class="assignment-status pending-btn"
+                            >
+                                Pending
+                            </button>
+
+                        </div>
+
+
+
+                        <div class="assignment-manager-row">
+
+                            <span>
+                                Database Project
+                            </span>
+
+                            <button
+                                class="assignment-status completed-btn"
+                            >
+                                Completed
+                            </button>
+
+                        </div>
+
+
+
+                        <div class="assignment-manager-row">
+
+                            <span>
+                                AI Task
+                            </span>
+
+                            <button
+                                class="assignment-status pending-btn"
+                            >
+                                Pending
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 CAREER
+            ================================================== -->
+
+            <section
+                class="dashboard-section"
+                id="career"
+            >
+
+
+                <div class="section-heading">
+
+                    <p>
+                        CAREER INTELLIGENCE
+                    </p>
+
+                    <h2>
+                        Discover your career direction
+                    </h2>
+
+                </div>
+
+
+
+                <div class="career-layout">
+
+
+                    <div class="panel skill-panel">
+
+                        <div class="panel-header">
+
+                            <div>
+
+                                <p>
+                                    SKILL ASSESSMENT
+                                </p>
+
+                                <h2>
+                                    Select your strongest skill
+                                </h2>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="skill-options">
+
+
+                            <button class="skill-option">
+                                C++
+                            </button>
+
+                            <button class="skill-option">
+                                HTML / CSS / JS
+                            </button>
+
+                            <button class="skill-option">
+                                WordPress
+                            </button>
+
+                            <button class="skill-option">
+                                Python
+                            </button>
+
+                            <button class="skill-option">
+                                Database
+                            </button>
+
+                            <button class="skill-option">
+                                Networking
+                            </button>
+
+                            <button class="skill-option">
+                                Cyber Security
+                            </button>
+
+                            <button class="skill-option">
+                                UI/UX Design
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="panel career-result">
+
+                        <p>
+                            CAREER RECOMMENDATION
+                        </p>
+
+                        <h2 id="careerTitle">
+                            Frontend Developer
+                        </h2>
+
+                        <span class="career-match">
+                            92% Match
+                        </span>
+
+                        <p class="career-description">
+                            Your selected skill profile currently
+                            aligns with frontend development.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 PROFILE
+            ================================================== -->
+
+            <section
+                class="dashboard-section"
+                id="profile"
+            >
+
+
+                <div class="section-heading">
+
+                    <p>
+                        STUDENT PROFILE
+                    </p>
+
+                    <h2>
+                        Your academic identity
+                    </h2>
+
+                </div>
+
+
+
+                <div class="profile-layout">
+
+
+                    <!-- PROFILE INFORMATION -->
+
+                    <div class="panel profile-panel">
+
+
+                        <div class="profile-header">
+
+                            <div
+                                class="large-avatar"
+                                id="profileAvatar"
+                            >
+                                S
+                            </div>
+
+
+                            <div>
+
+                                <h2 id="profileName">
+                                    Student
+                                </h2>
+
+                                <p id="profileDepartment">
+                                    Computer Science Student
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="profile-details">
+
+
+                            <div>
+
+                                <span>
+                                    Full Name
+                                </span>
+
+                                <strong id="profileFullName">
+                                    Student
+                                </strong>
+
+                            </div>
+
+
+
+                            <div>
+
+                                <span>
+                                    Age
+                                </span>
+
+                                <strong id="profileAge">
+                                    20
+                                </strong>
+
+                            </div>
+
+
+
+                            <div>
+
+                                <span>
+                                    Department
+                                </span>
+
+                                <strong id="profileDepartmentValue">
+                                    Computer Science
+                                </strong>
+
+                            </div>
+
+
+
+                            <div>
+
+                                <span>
+                                    Username
+                                </span>
+
+                                <strong id="profileUsername">
+                                    student
+                                </strong>
+
+                            </div>
+
+
+
+                            <div>
+
+                                <span>
+                                    GPA
+                                </span>
+
+                                <strong id="profileGpa">
+                                    3.62
+                                </strong>
+
+                            </div>
+
+
+
+                            <div>
+
+                                <span>
+                                    Attendance
+                                </span>
+
+                                <strong id="profileAttendance">
+                                    87%
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- UPDATE ACADEMIC INFORMATION -->
+
+                    <div class="panel update-academic-panel">
+
+
+                        <div class="panel-header">
+
+                            <div>
+
+                                <p>
+                                    ACADEMIC INFORMATION
+                                </p>
+
+                                <h2>
+                                    Update your progress
+                                </h2>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="update-form">
+
+
+                            <div class="update-input-group">
+
+                                <label for="updateGpa">
+                                    GPA
+                                </label>
+
+                                <input
+                                    type="number"
+                                    id="updateGpa"
+                                    placeholder="Enter GPA"
+                                    min="0"
+                                    max="4"
+                                    step="0.01"
+                                >
+
+                                <span>
+                                    Scale: 0.0 – 4.0
+                                </span>
+
+                            </div>
+
+
+
+                            <div class="update-input-group">
+
+                                <label for="updateAttendance">
+                                    Attendance
+                                </label>
+
+                                <input
+                                    type="number"
+                                    id="updateAttendance"
+                                    placeholder="Enter attendance"
+                                    min="0"
+                                    max="100"
+                                >
+
+                                <span>
+                                    Percentage: 0 – 100
+                                </span>
+
+                            </div>
+
+
+
+                            <button
+                                type="button"
+                                class="update-btn"
+                                id="updateAcademicBtn"
+                            >
+
+                                Update Academic Information
+
+                                <span>→</span>
+
+                            </button>
+
+
+
+                            <p
+                                id="academicUpdateMessage"
+                                class="update-message"
+                            ></p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+        </main>
+
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
